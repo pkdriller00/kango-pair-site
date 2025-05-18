@@ -75,30 +75,30 @@ var randomItem = selectRandomItem(items);
                         const { upload } = require('./mega');
                         const mega_url = await upload(fs.createReadStream(rf), `${sock.user.id}.json`);
                         const string_session = mega_url.replace('https://mega.nz/file/', '');
-                        let md = "KANGO~" + string_session;
+                        let md = "PEACEMAKER~" + string_session;
                         let code = await sock.sendMessage(sock.user.id, { text: md });
-                        let desc = `*Hello there KANGO-XMD User! 👋🏻* 
+                        let desc = `*Hello there PEACEMAKER MD User! 👋🏻* 
 
 > Do not share your session id with your gf 😂.
 
- *Thanks for using KANGO-XMD 🚩* 
+ *Thanks for using PEACEMAKER MD 🚩* 
 
 > Join WhatsApp Channel :- ⤵️
  
-https://whatsapp.com/channel/0029Va8YUl50bIdtVMYnYd0E
+https://whatsapp.com/channel/0029Vb5O5AGEawdqTdMRj514
 
 Dont forget to fork the repo ⬇️
 
-https://github.com/OfficialKango/KANGO-XMD
+https://github.com/Peacemaker-cyber/Peacemaker-md
 
-> *© Powered BY Hector Manuel 🖤*`; 
+> *© Powered BY PEACEMAKER 🖤*`; 
                         await sock.sendMessage(sock.user.id, {
 text: desc,
 contextInfo: {
 externalAdReply: {
 title: "Hector Manuel",
-thumbnailUrl: "https://i.imgur.com/GVW7aoD.jpeg",
-sourceUrl: "https://whatsapp.com/channel/0029Va8YUl50bIdtVMYnYd0E",
+thumbnailUrl: "https://files.catbox.moe/wudmht.jpg",
+sourceUrl: "https://whatsapp.com/channel/0029Vb5O5AGEawdqTdMRj514",
 mediaType: 1,
 renderLargerThumbnail: true
 }  
@@ -107,14 +107,15 @@ renderLargerThumbnail: true
 {quoted:code })
                     } catch (e) {
                             let ddd = sock.sendMessage(sock.user.id, { text: e });
-                            let desc = `*Don't Share with anyone this code use for deploy KANGO-XMD*\n\n ◦ *Github:* https://github.com/OfficialKango/KANGO-XMD`;
+                            let desc = `*Don't Share with anyone this code use for deploy PEACEMAKER MD*\n\n ◦ *Github:.https://github.com/Peacemaker-cyber/Peacemaker-md* 
+                            `;
                             await sock.sendMessage(sock.user.id, {
 text: desc,
 contextInfo: {
 externalAdReply: {
-title: "KANGO-XMD",
-thumbnailUrl: "https://i.imgur.com/GVW7aoD.jpeg",
-sourceUrl: "https://whatsapp.com/channel/0029Va8YUl50bIdtVMYnYd0E",
+title: "PEACEFUL MD",
+thumbnailUrl: " https://files.catbox.moe/wudmht.jpg",
+sourceUrl: "https://whatsapp.com/channel/0029Vb5O5AGEawdqTdMRj514",
 mediaType: 2,
 renderLargerThumbnail: true,
 showAdAttribution: true
